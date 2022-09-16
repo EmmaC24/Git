@@ -63,7 +63,20 @@ class MainTester {
 
 	@AfterAll
 	static void tearDownAfterClass() throws Exception {
+		File toDelete = new File ("test.txt");
+		toDelete.delete();
 		
+		File toDelete2 = new File ("test2.txt");
+		toDelete2.delete();
+		
+		File toDelete3 = new File ("test3.txt");
+		toDelete3.delete();
+		
+		File toDelete4 = new File ("test4.txt");
+		toDelete4.delete();
+		
+		File toDelete5 = new File ("test5.txt");
+		toDelete5.delete();
 	}
 	
 	@Test
